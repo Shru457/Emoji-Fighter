@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Fighter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fighter.css">
+</head>
+<body>
+    <h1>
+        "Emoji"
+        <br>
+        "Fighter"
+    </h1>
+    <div id="stage"></div>
+    <button id="fighterButton">Pick Fighters!</button>
+    <div id="stage2"></div>
+    <section id="game">
+        <p id="player1"></p>
+        <p id="player2"></p>
+    </section>
+    <p id="message-el"></p>
+    <button id="startButton">Start Fight</button>
+
+    <!---Score Board--->
+    <div id="scoreboard">
+        <p>Fighter 1 Wins: <span id="fighter1-wins">0</span></p>
+        <p>Fighter 2 Wins: <span id="fighter2-wins">0</span></p>
+    </div>
+    
+    <!---Audio Element--->
+    <audio id="pick-sound" preload="auto">
+        <source src="pick-sound.mp3" type="audio/mpeg">
+        <source src="pick-sound.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="fight-sound" preload="auto">
+        <source src="fight-sound.mp3" type="audio/mpeg">
+        <source src="fight-sound.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="win-sound" preload="auto">
+        <source src="win-sound.mp3" type="audio/mpeg">
+        <source src="win-sound.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>    
+
+    <script src="fighter.js"></script>
+</body>
+</html>
